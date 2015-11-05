@@ -1,0 +1,146 @@
+
+html, body {
+  font-family:'FontAwesome';src:url('../fonts/Arista.ttf');
+  font-size: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+
+
+body.intro #wrapper {
+  overflow: auto;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+a {
+  letter-spacing: 0.01em;
+}
+
+a:link, a.default {
+  color: #ff2a5c;
+  font-size: 1.155em;
+  outline: none;
+}
+
+
+p {
+  font-size: 0.9em;
+  line-height: 1.72em;
+  margin-bottom: 24px;
+}
+
+
+img {
+  margin-bottom: 15px;
+}
+
+
+html {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  color: #fefefe;
+  font-size: 100%;
+  height: 100%;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+}
+
+#wrapper {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+  z-index: 0;
+  /* block for backgrounds 
+  -------------------------------------------------------------------------*/
+}
+.preloader {
+  background: #3b405b;
+  background: -moz-radial-gradient(center, ellipse cover,#606060 0%,  #0E1226 100%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#606060), color-stop(100%, #0E1226));
+  background: -webkit-radial-gradient(center, ellipse cover,#606060 0%,  #0E1226 100%);
+  background: -o-radial-gradient(center, ellipse cover,#606060  0%,  #0E1226 100%);
+  background: -ms-radial-gradient(center, ellipse cover, #606060  0%, #0E1226 100%);
+  background: radial-gradient(ellipse at center, #606060  0%, #0E1226 100%);
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 999999;
+}
+/* line 123, ../sass/style.scss */
+.preloader .inner-preloader {
+  height: 100%;
+  width: 100%;
+}
+#logo-proloader {
+  height: 100px;
+  left: 50%;
+  margin-left: -50px;
+  margin-top: -50px;
+  position: absolute;
+  top: 50%;
+  width: 100px;
+  z-index: 9999;
+  -webkit-animation-name: spin-logo;
+          animation-name: spin-logo;
+  -webkit-animation-duration: 4000ms;
+          animation-duration: 4000ms;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+          animation-timing-function: linear;
+}
+
+@-webkit-keyframes spin-logo {
+  /* line 147, ../sass/style.scss */
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+
+  /* line 150, ../sass/style.scss */
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@keyframes spin-logo {
+  /* line 147, ../sass/style.scss */
+  from {
+    -webkit-transform: rotateY(0deg);
+            transform: rotateY(0deg);
+  }
+
+  /* line 150, ../sass/style.scss */
+  to {
+    -webkit-transform: rotateY(360deg);
+            transform: rotateY(360deg);
+  }
+}
+
+@media (-webkit-min-device-pixel-ratio: 2) {
+  /* line 1287, ../sass/style.scss */
+  .replace-2x {
+    opacity: 0;
+  }
+  /* line 1290, ../sass/style.scss */
+  .replace-2x.loaded {
+    -webkit-transition: opacity .2s linear;
+    opacity: 1;
+    -webkit-transition: opacity .2s linear;
+            transition: opacity .2s linear;
+  }
+}
